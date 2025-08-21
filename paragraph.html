@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph Typing Practice | TypeMaster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Improve typing speed with paragraph practice. Track progress, effects, and daily goals.">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/paragraph.js"></script>
+  <script defer src="js/ai.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">TypeMaster</div>
+    <nav>
+      <button id="darkModeToggle"></button>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <div class="adsense-banner" id="adsenseTop">
+    <div class="adsense-placeholder">AdSense Banner</div>
+  </div>
+  <main>
+    <section class="practice-container">
+      <div class="level-indicator" id="levelIndicator"></div>
+      <div class="paragraph-box" id="paragraphBox"></div>
+      <textarea id="paragraphInput" autocomplete="off" autofocus placeholder="Type here..."></textarea>
+      <div class="typing-metrics">
+        <span id="wpmStat">WPM: 0</span>
+        <span id="accuracyStat">Accuracy: 100%</span>
+        <span id="scoreStat">Score: 0</span>
+        <span id="dailyTracker"></span>
+      </div>
+      <div id="funnyAnim"></div>
+    </section>
+    <section id="resultScreen" class="hidden">
+      <h2>Results</h2>
+      <div id="scoreSummary"></div>
+      <div class="adsense-banner result-ad">
+        <div class="adsense-placeholder">AdSense Banner</div>
+      </div>
+      <div id="motivationalQuote"></div>
+      <button id="nextLevelBtn">Next Level</button>
+      <button id="backBtn">Back</button>
+      <a href="index.html" class="home-btn">Home</a>
+    </section>
+    <!-- Video Ad Modal -->
+    <div id="videoAdModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeVideoAd" class="close">&times;</span>
+        <video id="videoAd" controls autoplay>
+          <source src="assets/video_ad.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="adsense-placeholder">Video Ad</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="affiliateLinks"></div>
+    <p>&copy; 2025 TypeMaster</p>
+  </footer>
+</body>
+</html>
