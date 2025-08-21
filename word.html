@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Typing Practice | TypeMaster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice typing single words with real-time feedback, WPM, and fun effects.">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/word.js"></script>
+  <script defer src="js/ai.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">TypeMaster</div>
+    <nav>
+      <button id="darkModeToggle"></button>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <div class="adsense-banner" id="adsenseTop">
+    <div class="adsense-placeholder">AdSense Banner</div>
+  </div>
+  <main>
+    <section class="practice-container">
+      <div class="level-indicator" id="levelIndicator"></div>
+      <div class="word-box" id="wordBox"></div>
+      <input type="text" id="wordInput" autocomplete="off" autofocus placeholder="Type here...">
+      <div class="typing-metrics">
+        <span id="wpmStat">WPM: 0</span>
+        <span id="accuracyStat">Accuracy: 100%</span>
+        <span id="scoreStat">Score: 0</span>
+      </div>
+      <div id="funnyAnim"></div>
+      <button id="addWordBtn">Add New Word</button>
+    </section>
+    <section id="resultScreen" class="hidden">
+      <h2>Results</h2>
+      <div id="scoreSummary"></div>
+      <div class="adsense-banner result-ad">
+        <div class="adsense-placeholder">AdSense Banner</div>
+      </div>
+      <div id="motivationalQuote"></div>
+      <button id="nextLevelBtn">Next Level</button>
+      <button id="backBtn">Back</button>
+      <a href="index.html" class="home-btn">Home</a>
+    </section>
+  </main>
+  <footer>
+    <div id="affiliateLinks"></div>
+    <p>&copy; 2025 TypeMaster</p>
+  </footer>
+</body>
+    </html>
